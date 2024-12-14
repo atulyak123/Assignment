@@ -1,0 +1,65 @@
+/* card.module.css */
+
+.card {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer; /* Make it feel clickable */
+  transition: transform 0.3s ease-in-out;
+  margin:2rem
+
+}
+
+.card:hover {
+  transform: scale(1.05); /* Add a subtle scale effect on hover */
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.headerText {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.content {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+.description {
+  max-height: 0; /* Start with no height to hide it */
+  overflow: hidden; /* Hide content that exceeds max height */
+  opacity: 0;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 15px;
+  transition: max-height 0.5s ease, opacity 0.5s ease; /* Smooth transition */
+}
+
+.description.open {
+  max-height: 500px; /* Allow more space for the expanded description */
+  opacity: 1;
+}
+
+.button {
+  background-color: #2196F3;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background-color: #1976d2;
+}
