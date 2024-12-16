@@ -1,16 +1,11 @@
-import styles from '../src/App.module.css'
-import { ProductCard } from './Component/Card/Card'
+import Navbar from './Component/Card/Header/Navbar'
 
 function App() {
-  
-
   return (
     <>
-      <div className={styles.root}>
-        <ProductCard/>
-      
+      <div>
+      <Navbar/>
       </div>
-     
     </>
   )
 }
